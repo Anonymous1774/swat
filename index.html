@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAT - Official Fan Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        swat: {
+                            black: '#0a0a0a',
+                            dark: '#111827',
+                            blue: '#1e3a8a',
+                            gold: '#ca8a04',
+                            grey: '#374151',
+                            metal: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        mono: ['Roboto Mono', 'monospace'],
+                    },
+                    backgroundImage: {
+                        'tactical-grid': "linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.95)), url('https://www.transparenttextures.com/patterns/carbon-fibre.png')",
+                        'hero-gradient': "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(17, 24, 39, 1))",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glitch-text {
+            position: relative;
+        }
+        .btn-tactical {
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+        }
+        .btn-tactical:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(30, 58, 138, 0.5);
+        }
+        .section-divider {
+            height: 4px;
+            background: repeating-linear-gradient(
+                45deg,
+                #1e3a8a,
+                #1e3a8a 10px,
+                #111827 10px,
+                #111827 20px
+            );
+        }
+    </style>
+</head>
+<body class="bg-swat-black text-gray-200 font-sans antialiased selection:bg-swat-blue selection:text-white">
+
+    <!-- Navigation (Logo only) -->
+    <nav class="fixed w-full z-50 bg-swat-black/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <span class="font-black text-3xl tracking-tighter text-white">S.W.A.T.</span>
+                    <span class="ml-2 text-xs font-mono text-swat-gold uppercase tracking-widest border border-swat-gold px-1 py-0.5 rounded">Official Access</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <span class="text-gray-500 font-mono text-xs"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image - Local Asset -->
+        <div class="absolute inset-0 bg-[url('images/hero-bg.jpg')] bg-cover bg-center"></div>
+        <!-- High Contrast Overlay for Readability -->
+        <div class="absolute inset-0 bg-gradient-to-t from-swat-black via-swat-black/80 to-swat-black/40"></div>
+        <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+        
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="inline-block mb-6 bg-black/60 backdrop-blur-md border border-swat-gold/30 px-4 py-2 rounded-full">
+                <p class="text-swat-gold font-mono tracking-[0.3em] text-sm uppercase font-bold">Status: Active // Official Fan Access</p>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter uppercase leading-none drop-shadow-2xl">
+                Roll With <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-swat-blue drop-shadow-sm">The Best</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto font-medium drop-shadow-lg leading-relaxed">
+                The official S.W.A.T. fan experience. Get exclusive access to the world of the 20-Squad.
+            </p>
+            <div class="mt-10">
+                <a href="#vip" class="btn-tactical inline-block bg-swat-blue hover:bg-blue-600 text-white font-bold py-4 px-10 text-lg border border-blue-400/30 shadow-[0_0_20px_rgba(30,58,138,0.5)]">
+                    Enter The Perimeter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <!-- Fan Protection Code Section -->
+    <section class="py-24 bg-swat-dark relative overflow-hidden">
+        <!-- Decorative Background -->
+        <div class="absolute inset-0 bg-[url('images/promo-1.jpg')] bg-cover bg-center opacity-5 mix-blend-overlay"></div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-swat-blue/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-white uppercase tracking-wide mb-4">Fan Protection Code</h2>
+                <div class="w-24 h-1 bg-swat-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Code 1 -->
+                <div class="bg-gray-900/50 p-8 border border-gray-800 hover:border-swat-blue transition duration-300">
+                    <div class="text-swat-blue mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">Protect Our Own</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        We create a safe perimeter for all fans. Harassment, spoilers without warning, and disrespect are violations of protocol.
+                    </p>
+                </div>
+
+                <!-- Code 2 -->
+                <div class="bg-gray-900/50 p-8 border border-gray-800 hover:border-swat-blue transition duration-300">
+                    <div class="text-swat-blue mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V17m0 12V10" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">Integrity First</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        We honor the show, the cast, and the crew. We verify our intel and do not spread unconfirmed rumors.
+                    </p>
+                </div>
+
+                <!-- Code 3 -->
+                <div class="bg-gray-900/50 p-8 border border-gray-800 hover:border-swat-blue transition duration-300">
+                    <div class="text-swat-blue mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">Respect the Rank</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Treat fellow fans and new members with the same respect you'd expect from Hondo himself.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Card Membership Section -->
+    <section id="vip" class="py-24 bg-swat-black relative">
+         <div class="absolute inset-0 bg-[url('images/promo-2.jpg')] bg-cover bg-center opacity-10"></div>
+         <div class="absolute inset-0 bg-gradient-to-r from-swat-black via-swat-black/95 to-swat-black/80"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-6 uppercase">
+                        S.W.A.T. <span class="text-swat-gold">ElitetCard</span>
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8 font-light">
+                        Upgrade your status. Get the digital badge that proves you're part of the inner circle.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center">
+                            <span class="flex-shrink-0 h-6 w-6 rounded-full bg-swat-blue flex items-center justify-center text-xs text-white">✓</span>
+                            <span class="ml-4 text-gray-300 font-mono">Classified Intel & Behind-the-Scenes Access</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="flex-shrink-0 h-6 w-6 rounded-full bg-swat-blue flex items-center justify-center text-xs text-white">✓</span>
+                            <span class="ml-4 text-gray-300 font-mono">Tactical Gear Discounts (Official Merch)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="flex-shrink-0 h-6 w-6 rounded-full bg-swat-blue flex items-center justify-center text-xs text-white">✓</span>
+                            <span class="ml-4 text-gray-300 font-mono">Priority Clearance for Fan Events</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn-tactical inline-block bg-white text-swat-black hover:bg-gray-200 font-bold py-3 px-8">
+                        Get Your Badge
+                    </a>
+                    <p class="mt-4 text-xs text-gray-500">*Payment link placeholder</p>
+                </div>
+
+                <!-- Card Visual -->
+                <div class="lg:w-1/2 flex justify-center perspective-1000">
+                    <div class="relative w-96 h-60 bg-gradient-to-br from-gray-800 to-black rounded-xl border border-gray-700 shadow-2xl transform rotate-3 hover:rotate-0 transition duration-500 p-6 flex flex-col justify-between">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 rounded-xl"></div>
+                        <div class="flex justify-between items-start z-10">
+                            <span class="font-black text-2xl text-white tracking-tighter">S.W.A.T.</span>
+                            <div class="text-right">
+                                <span class="block text-xs text-swat-gold uppercase font-bold">Elite Member</span>
+                                <span class="block text-xs text-gray-400 font-mono">ID: 20-SQD-884</span>
+                            </div>
+                        </div>
+                        <div class="z-10">
+                            <span class="font-mono text-xl text-gray-300 tracking-widest block mb-1">0000 0000 0000 0000</span>
+                            <div class="flex justify-between items-end mt-4">
+                                <div>
+                                    <span class="block text-[10px] text-gray-500 uppercase">Operative</span>
+                                    <span class="block text-sm text-white font-bold uppercase">Fan Name</span>
+                                </div>
+                                <div class="h-8 w-12 bg-yellow-600/20 border border-yellow-600 rounded flex items-center justify-center">
+                                    <div class="w-8 h-6 border-t-2 border-b-2 border-yellow-600/50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Meet and Greet Section -->
+    <section class="py-24 bg-swat-dark relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">Fan Meet & Greet</h2>
+            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+                We are organizing an exclusive digital meet and greet with available cast members. Slots are extremely limited. Submit your application to be considered for this classified briefing.
+            </p>
+            
+            <div class="bg-black/40 p-6 rounded-lg border border-gray-800 inline-block mb-10">
+                <p class="text-swat-gold font-mono text-sm uppercase mb-2">Current Status</p>
+                <p class="text-2xl font-bold text-white">Accepting Applications</p>
+            </div>
+
+            <div>
+                <a href="#" class="btn-tactical inline-block bg-swat-gold hover:bg-yellow-600 text-black font-bold py-4 px-12 text-lg">
+                    Apply For Clearance
+                </a>
+                <p class="mt-4 text-xs text-gray-500">*WhatsApp contact placeholder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-black text-2xl text-white tracking-tighter">S.W.A.T.</span>
+                <span class="ml-2 text-xs text-gray-600">INITIATIVE</span>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-gray-600 text-xs mb-2">Affiliated with CBS or Sony Pictures Television.</p>
+                <p class="text-gray-600 text-xs">&copy; 2024 Fan Experience. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
